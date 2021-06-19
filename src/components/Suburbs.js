@@ -10,6 +10,7 @@ import {
     makeStyles,
     Typography,
     Paper,
+    Button,
 } from '@material-ui/core';
 import MainTitle from './common/MainTitle';
 
@@ -19,6 +20,16 @@ const useStyles = makeStyles((theme) => ({
     },
     mainTitle: {
         marginBottom: theme.spacing(1),
+    },
+    suburbsContainer: {
+        alignItems: 'center',
+    },
+    suburbsImage: {
+        '& img': {
+            maxWidth: '100%',
+            height: 350,
+            objectFit: 'cover',
+        },
     },
     suburbs: {
         '& .MuiListItem-root': {
@@ -36,9 +47,16 @@ const Suburbs = () => {
     return (
         <Paper className={classes.root}>
             <Container>
-                <Grid container spacing={3}>
-                    <Grid item sm={6}>
-                        <img src="" alt="" />
+                <Grid
+                    className={classes.suburbsContainer}
+                    container
+                    spacing={5}
+                >
+                    <Grid className={classes.suburbsImage} item sm={6}>
+                        <img
+                            src="images/carrier-cooling.jpg"
+                            alt="carrier cooling"
+                        />
                     </Grid>
                     <Grid item sm={6}>
                         <MainTitle
@@ -72,6 +90,13 @@ const Suburbs = () => {
                                 </ListItem>
                             ))}
                         </List>
+                        <Button
+                            variant="contained"
+                            size="large"
+                            color="secondary"
+                        >
+                            Book Now
+                        </Button>
                     </Grid>
                 </Grid>
             </Container>
