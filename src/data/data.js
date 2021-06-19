@@ -51,3 +51,33 @@ export const benefitsData = [
         icon: '/images/benefits/heating.svg',
     },
 ];
+
+export const reviewsData = [
+    {
+        id: 1,
+        name: 'Rakib Hossain',
+        title: 'Digital marketing',
+        image: '/images/reviews/rakib.jpg',
+        reviewValue: 3,
+        reviewDocument:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima fuga hic, vitae corporis necessitatibus placeat',
+    },
+    {
+        id: 2,
+        name: 'Ashiq Hossain',
+        title: 'Android developer',
+        image: '/images/reviews/ashiq.jpg',
+        reviewValue: 5,
+        reviewDocument:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima fuga hic, vitae corporis necessitatibus placeat',
+    },
+    {
+        id: 3,
+        name: 'Rohan Hossain',
+        title: 'Game developer',
+        image: '/images/reviews/rohan.jpg',
+        reviewValue: 4,
+        reviewDocument:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima fuga hic, vitae corporis necessitatibus placeat',
+    },
+];
