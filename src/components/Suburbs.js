@@ -31,9 +31,9 @@ const useStyles = makeStyles((theme) => ({
             objectFit: 'cover',
         },
     },
-    suburbs: {
+    suburbsList: {
         '& .MuiListItem-root': {
-            padding: `${theme.spacing(0.3)}px ${theme.spacing(0)}`,
+            padding: theme.spacing(0),
             '& .MuiListItemIcon-root': {
                 minWidth: 40,
             },
@@ -76,7 +76,7 @@ const Suburbs = () => {
                             reputable air conditioning brands including Daikin,
                             Fujitsu, Hitachi and Mitsubishi just to name few.
                         </Typography>
-                        <List className={classes.suburbs}>
+                        <List className={classes.suburbsList}>
                             {[
                                 'High Quality Installation',
                                 'All Major Brands Included',

@@ -1,5 +1,6 @@
 import React from 'react';
 import Benefits from '../components/Benefits/Benefits';
+import Contact from '../components/Contact/Contact';
 import Header from '../components/Header';
 import Reviews from '../components/Reviews/Reviews';
 import Services from '../components/Services/Services';
@@ -13,6 +14,7 @@ const Home = () => {
             <Suburbs />
             <Benefits />
             <Reviews />
+            <Contact />
         </>
     );
 };

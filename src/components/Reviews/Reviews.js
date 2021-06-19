@@ -15,7 +15,7 @@ const Reviews = () => {
     const classes = useStyles();
 
     return (
-        <Paper className={classes.root}>
+        <Paper className={classes.root} elevation={0} square>
             <Container>
                 <MainTitle
                     title="What our customers say"

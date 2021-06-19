@@ -10,9 +10,6 @@ import { Rating } from '@material-ui/lab';
 import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        backgroundColor: '#fff',
-    },
     reviewHeading: {
         '& .MuiAvatar-root': {
             '& img': {
@@ -31,7 +28,7 @@ const ReviewItem = ({ name, title, image, reviewValue, reviewDocument }) => {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
+        <Card>
             <CardHeader
                 avatar={
                     <Avatar>
