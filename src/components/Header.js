@@ -1,7 +1,11 @@
-import { Button, Container, Grid } from '@material-ui/core';
-import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core';
 import React from 'react';
+import {
+    Button,
+    Container,
+    Grid,
+    makeStyles,
+    Typography,
+} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
