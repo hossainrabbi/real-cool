@@ -11,6 +11,7 @@ import {
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        backgroundColor: '#fff',
         '& .MuiCardContent-root': {
             paddingBottom: theme.spacing(0.5),
         },

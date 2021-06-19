@@ -5,7 +5,9 @@ import { servicesData } from '../../data/data';
 import ServiceItem from './ServiceItem';
 
 const useStyles = makeStyles((theme) => ({
-    root: {},
+    root: {
+        padding: `${theme.spacing(7)}px 0`,
+    },
 }));
 
 const Services = () => {
@@ -21,7 +23,7 @@ const Services = () => {
                 />
                 <Grid container spacing={3}>
                     {servicesData.map((item) => (
-                        <Grid item sm={4}>
+                        <Grid item sm={4} key={item.id}>
                             <ServiceItem {...item} key={item.id} />
                         </Grid>
                     ))}
