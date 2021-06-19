@@ -24,3 +24,30 @@ export const servicesData = [
         image: '/images/services/repairs.jpg',
     },
 ];
+
+export const benefitsData = [
+    {
+        id: 1,
+        description:
+            'Increase the officiency of your air-conditioner by slashing your electricity bills.',
+        icon: '/images/benefits/electricity.svg',
+    },
+    {
+        id: 2,
+        description:
+            'Improves air quality by removing harmful germs, mould and bacteria',
+        icon: '/images/benefits/bacteria.svg',
+    },
+    {
+        id: 3,
+        description:
+            'Comfort, particularly in summer as we live in a hot climate.',
+        icon: '/images/benefits/climate.svg',
+    },
+    {
+        id: 4,
+        description:
+            'Heating and cooling performance is increased by up to 4℃.',
+        icon: '/images/benefits/heating.svg',
+    },
+];

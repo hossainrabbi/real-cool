@@ -45,7 +45,7 @@ const Suburbs = () => {
     const classes = useStyles();
 
     return (
-        <Paper className={classes.root}>
+        <Paper className={classes.root} elevation={0} square>
             <Container>
                 <Grid
                     className={classes.suburbsContainer}
