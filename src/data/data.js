@@ -1,3 +1,7 @@
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 export const servicesData = [
     {
         id: 1,
@@ -79,5 +83,123 @@ export const reviewsData = [
         reviewValue: 4,
         reviewDocument:
             'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima fuga hic, vitae corporis necessitatibus placeat',
+    },
+];
+
+// Navbar & Footer Items
+export const quickLink = [
+    {
+        id: 1,
+        title: 'Services',
+        url: '/services',
+    },
+    {
+        id: 2,
+        title: 'Products',
+        url: '/products',
+    },
+    {
+        id: 3,
+        title: 'Specials',
+        url: '/specials',
+    },
+    {
+        id: 4,
+        title: 'Franchise',
+        url: '/franchise',
+    },
+    {
+        id: 5,
+        title: 'About us',
+        url: '/about',
+    },
+    {
+        id: 6,
+        title: 'Blog',
+        url: '/blog',
+    },
+    {
+        id: 7,
+        title: 'Contact us',
+        url: '/contact',
+    },
+];
+
+// Footer Items
+export const services = [
+    {
+        id: 1,
+        title: 'Ducted Air Conditioning',
+        url: '/ductedAir',
+    },
+    {
+        id: 2,
+        title: 'Split System',
+        url: '/splitSystem',
+    },
+    {
+        id: 3,
+        title: 'Services & Repairs',
+        url: '/repairs',
+    },
+];
+
+export const others = [
+    {
+        id: 1,
+        title: 'Benefits of Cleaning',
+        url: '/benefits',
+    },
+    {
+        id: 2,
+        title: 'Our Reviews',
+        url: '/reviews',
+    },
+];
+
+export const information = [
+    {
+        id: 1,
+        title: 'Privacy',
+        url: '/privacy',
+    },
+    {
+        id: 2,
+        title: 'Terms of Services',
+        url: '/termsServices',
+    },
+    {
+        id: 3,
+        title: 'Terms of USE',
+        url: '/termsUse',
+    },
+    {
+        id: 4,
+        title: 'Help',
+        url: '/help',
+    },
+    {
+        id: 5,
+        title: 'Legal',
+        url: '/legal',
+    },
+];
+
+// Social Links
+export const socialLink = [
+    {
+        id: 1,
+        url: 'https://www.facebook.com/hossainrabbibd/',
+        Icon: FacebookIcon,
+    },
+    {
+        id: 2,
+        url: 'https://www.linkedin.com/in/hossainrabbi/',
+        Icon: LinkedInIcon,
+    },
+    {
+        id: 3,
+        url: 'https://www.instagram.com/hossainrabbibd/',
+        Icon: InstagramIcon,
     },
 ];

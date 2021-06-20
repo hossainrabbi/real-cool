@@ -9,6 +9,7 @@ import {
     Button,
     makeStyles,
 } from '@material-ui/core';
+import { quickLink } from '../data/data';
 
 const useStyles = makeStyles((theme) => ({
     root: {},
@@ -44,51 +45,16 @@ const Navbar = () => {
                         </Grid>
                         <Grid item sm />
                         <Grid className={classes.navItem} item>
-                            <Button
-                                component={Link}
-                                color="inherit"
-                                to="/services"
-                            >
-                                Services
-                            </Button>
-                            <Button
-                                component={Link}
-                                color="inherit"
-                                to="/products"
-                            >
-                                Products
-                            </Button>
-                            <Button
-                                component={Link}
-                                color="inherit"
-                                to="/specials"
-                            >
-                                Specials
-                            </Button>
-                            <Button
-                                component={Link}
-                                color="inherit"
-                                to="/franchise"
-                            >
-                                Franchise
-                            </Button>
-                            <Button
-                                component={Link}
-                                color="inherit"
-                                to="/about"
-                            >
-                                About us
-                            </Button>
-                            <Button component={Link} color="inherit" to="/blog">
-                                Blog
-                            </Button>
-                            <Button
-                                component={Link}
-                                color="inherit"
-                                to="/contact"
-                            >
-                                Contact us
-                            </Button>
+                            {quickLink.map(({ id, title, url }) => (
+                                <Button
+                                    component={Link}
+                                    color="inherit"
+                                    to={url}
+                                    key={id}
+                                >
+                                    {title}
+                                </Button>
+                            ))}
                             <Button
                                 variant="contained"
                                 component={Link}
