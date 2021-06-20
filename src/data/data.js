@@ -100,26 +100,16 @@ export const quickLink = [
     },
     {
         id: 3,
-        title: 'Specials',
-        url: '/specials',
-    },
-    {
-        id: 4,
-        title: 'Franchise',
-        url: '/franchise',
-    },
-    {
-        id: 5,
         title: 'About us',
         url: '/about',
     },
     {
-        id: 6,
+        id: 4,
         title: 'Blog',
         url: '/blog',
     },
     {
-        id: 7,
+        id: 5,
         title: 'Contact us',
         url: '/contact',
     },

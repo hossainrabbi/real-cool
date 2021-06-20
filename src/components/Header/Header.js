@@ -5,6 +5,7 @@ import {
     Grid,
     makeStyles,
     Typography,
+    useMediaQuery,
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -45,13 +46,17 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
     const classes = useStyles();
+    const matches = useMediaQuery((theme) => theme.breakpoints.up('sm'));
 
     return (
         <div className={classes.root}>
             <Container>
                 <Grid className={classes.headerContent} container>
                     <Grid item md={7} sm={9}>
-                        <Typography variant="h2" component="h1">
+                        <Typography
+                            variant={matches ? 'h2' : 'h3'}
+                            component="h1"
+                        >
                             Air Conditioner Specialists
                         </Typography>
                         <Typography variant="subtitle2">

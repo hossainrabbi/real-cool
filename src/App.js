@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Home from './pages/Home';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
 const theme = createMuiTheme({
@@ -15,13 +15,27 @@ const theme = createMuiTheme({
             main: '#3f90d2',
         },
     },
+    overrides: {
+        MuiCssBaseline: {
+            '@global': {
+                html: {
+                    overflowX: 'hidden',
+                    width: '100%',
+                },
+                body: {
+                    overflowX: 'hidden',
+                    width: '100%',
+                },
+            },
+        },
+    },
 });
 
 const App = () => {
     return (
         <ThemeProvider theme={theme}>
             <Router>
-                {/* <Navbar /> */}
+                <Navbar />
                 <Switch>
                     <Route exact path="/" component={Home} />
                 </Switch>

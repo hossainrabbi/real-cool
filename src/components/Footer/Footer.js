@@ -68,11 +68,6 @@ const Footer = () => {
                                     mainTitle="Services"
                                     navItem={services}
                                 />
-                                <br />
-                                <FooterItem
-                                    mainTitle="Others"
-                                    navItem={others}
-                                />
                             </Grid>
                             <Grid item sm={4} xs={6}>
                                 <FooterItem
@@ -83,16 +78,16 @@ const Footer = () => {
                         </Grid>
                     </Grid>
                 </Grid>
+                <Typography
+                    className={classes.copyRight}
+                    align="center"
+                    variant="subtitle2"
+                    component="p"
+                >
+                    ©Copyright {new Date().getFullYear()}, Real Cool IndusTries,
+                    All Right Reserved.
+                </Typography>
             </Container>
-            <Typography
-                className={classes.copyRight}
-                align="center"
-                variant="subtitle2"
-                component="p"
-            >
-                ©Copyright {new Date().getFullYear()}, Real Cool IndusTries, All
-                Right Reserved.
-            </Typography>
         </footer>
     );
 };
