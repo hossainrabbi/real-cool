@@ -21,7 +21,7 @@ const App = () => {
     return (
         <ThemeProvider theme={theme}>
             <Router>
-                <Navbar />
+                {/* <Navbar /> */}
                 <Switch>
                     <Route exact path="/" component={Home} />
                 </Switch>

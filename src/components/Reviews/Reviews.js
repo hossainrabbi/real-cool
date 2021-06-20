@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
     root: {
         padding: `${theme.spacing(7)}px ${theme.spacing(0)}px`,
     },
+    reviewGrid: {
+        justifyContent: 'center',
+    },
 }));
 
 const Reviews = () => {
@@ -22,9 +25,9 @@ const Reviews = () => {
                     subTitle="Real cool Industries"
                     align="center"
                 />
-                <Grid container spacing={3}>
+                <Grid className={classes.reviewGrid} container spacing={3}>
                     {reviewsData.map((item) => (
-                        <Grid item sm={4} key={item.id}>
+                        <Grid item md={4} sm={6} key={item.id}>
                             <ReviewItem {...item} />
                         </Grid>
                     ))}

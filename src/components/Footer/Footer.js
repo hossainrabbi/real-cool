@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
     footerContent: {
         alignItems: 'center',
+        justifyContent: 'center',
         '& .MuiTypography-h4': {
             color: '#fff',
             textDecoration: 'none',
@@ -44,7 +45,7 @@ const Footer = () => {
         <footer className={classes.root}>
             <Container>
                 <Grid className={classes.footerContent} container spacing={5}>
-                    <Grid className={classes.footerLogo} item sm={4}>
+                    <Grid className={classes.footerLogo} item md={4} xs={12}>
                         <Typography variant="h4" component={Link} to="/">
                             Real Cool
                         </Typography>
@@ -54,15 +55,15 @@ const Footer = () => {
                             ))}
                         </div>
                     </Grid>
-                    <Grid item sm={8}>
+                    <Grid item md={8} xs={12}>
                         <Grid container spacing={3}>
-                            <Grid item sm={4}>
+                            <Grid item sm={4} xs={6}>
                                 <FooterItem
                                     mainTitle="Quick Link"
                                     navItem={quickLink}
                                 />
                             </Grid>
-                            <Grid item sm={4}>
+                            <Grid item sm={4} xs={6}>
                                 <FooterItem
                                     mainTitle="Services"
                                     navItem={services}
@@ -73,7 +74,7 @@ const Footer = () => {
                                     navItem={others}
                                 />
                             </Grid>
-                            <Grid item sm={4}>
+                            <Grid item sm={4} xs={6}>
                                 <FooterItem
                                     mainTitle="Information"
                                     navItem={information}

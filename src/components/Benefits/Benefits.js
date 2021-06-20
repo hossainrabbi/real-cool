@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
     benefitsItems: {
         marginTop: theme.spacing(6),
+        justifyContent: 'center',
     },
 }));
 
@@ -26,7 +27,7 @@ const Benefits = () => {
                 />
                 <Grid className={classes.benefitsItems} container spacing={3}>
                     {benefitsData.map((item) => (
-                        <Grid item sm={3} key={item.id}>
+                        <Grid item md={3} sm={6} key={item.id}>
                             <BenefitItem {...item} />
                         </Grid>
                     ))}

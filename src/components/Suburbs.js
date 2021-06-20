@@ -86,7 +86,15 @@ const Suburbs = () => {
                                     <ListItemIcon>
                                         <CheckCircleOutlineIcon color="secondary" />
                                     </ListItemIcon>
-                                    <ListItemText primary={item} />
+                                    <ListItemText>
+                                        <Typography
+                                            variant="subtitle2"
+                                            component="p"
+                                            color="textSecondary"
+                                        >
+                                            {item}
+                                        </Typography>
+                                    </ListItemText>
                                 </ListItem>
                             ))}
                         </List>

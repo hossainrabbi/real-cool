@@ -50,7 +50,7 @@ const Header = () => {
         <div className={classes.root}>
             <Container>
                 <Grid className={classes.headerContent} container>
-                    <Grid item sm={6}>
+                    <Grid item md={7} sm={9}>
                         <Typography variant="h2" component="h1">
                             Air Conditioner Specialists
                         </Typography>

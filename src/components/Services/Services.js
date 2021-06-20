@@ -8,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
     root: {
         padding: `${theme.spacing(7)}px 0`,
     },
+    servicesGrid: {
+        justifyContent: 'center',
+    },
 }));
 
 const Services = () => {
@@ -21,9 +24,9 @@ const Services = () => {
                     subTitle="What we do"
                     title="Services We Order"
                 />
-                <Grid container spacing={3}>
+                <Grid className={classes.servicesGrid} container spacing={3}>
                     {servicesData.map((item) => (
-                        <Grid item sm={4} key={item.id}>
+                        <Grid item sm={6} md={4} key={item.id}>
                             <ServiceItem {...item} key={item.id} />
                         </Grid>
                     ))}

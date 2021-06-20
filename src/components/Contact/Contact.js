@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     },
     contactInfo: {
         alignItems: 'center',
+        '& .MuiGrid-root': {
+            width: '100%',
+        },
     },
     contactList: {
         '& .MuiListItem-root': {
@@ -31,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     googleMap: {
-        width: '100%',
+        minWidth: '100%',
         height: 250,
         border: 0,
     },
@@ -67,13 +70,29 @@ const Contact = () => {
                                 <ListItemIcon>
                                     <PhoneInTalkIcon color="secondary" />
                                 </ListItemIcon>
-                                <ListItemText primary="+8801712121212" />
+                                <ListItemText>
+                                    <Typography
+                                        variant="subtitle2"
+                                        component="p"
+                                        color="textSecondary"
+                                    >
+                                        +8801712121212
+                                    </Typography>
+                                </ListItemText>
                             </ListItem>
                             <ListItem>
                                 <ListItemIcon>
                                     <MailIcon color="secondary" />
                                 </ListItemIcon>
-                                <ListItemText primary="support@realcool.com" />
+                                <ListItemText>
+                                    <Typography
+                                        variant="subtitle2"
+                                        component="p"
+                                        color="textSecondary"
+                                    >
+                                        support@realcool.com
+                                    </Typography>
+                                </ListItemText>
                             </ListItem>
                         </List>
                     </Grid>
