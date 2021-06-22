@@ -1,11 +1,12 @@
+import React from 'react';
 import {
+    Button,
     Container,
     List,
     ListItem,
     ListItemText,
     makeStyles,
 } from '@material-ui/core';
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { quickLink } from '../../data/data';
 
@@ -27,6 +28,15 @@ const ResponsiveNav = () => {
                         <ListItemText primary={title} />
                     </ListItem>
                 ))}
+                <Button
+                    fullWidth
+                    variant="contained"
+                    component={Link}
+                    color="secondary"
+                    to="/login"
+                >
+                    Login
+                </Button>
             </Container>
         </List>
     );

@@ -1,6 +1,11 @@
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import RateReviewIcon from '@material-ui/icons/RateReview';
+import AddToPhotosIcon from '@material-ui/icons/AddToPhotos';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import InsertChartIcon from '@material-ui/icons/InsertChart';
+import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered';
 
 export const servicesData = [
     {
@@ -90,18 +95,18 @@ export const reviewsData = [
 export const quickLink = [
     {
         id: 1,
-        title: 'Services',
-        url: '/services',
+        title: 'Home',
+        url: '/',
     },
     {
         id: 2,
-        title: 'Products',
-        url: '/products',
+        title: 'About us',
+        url: '/about',
     },
     {
         id: 3,
-        title: 'About us',
-        url: '/about',
+        title: 'Services',
+        url: '/services',
     },
     {
         id: 4,
@@ -112,6 +117,54 @@ export const quickLink = [
         id: 5,
         title: 'Contact us',
         url: '/contact',
+    },
+    {
+        id: 6,
+        title: 'Dashboard',
+        url: '/dashboard',
+    },
+];
+
+// Dashboard
+export const adminDashboard = [
+    {
+        id: 1,
+        title: 'Order List',
+        url: '/orderList',
+        Icon: FormatListNumberedIcon,
+    },
+    {
+        id: 2,
+        title: 'Add Service',
+        url: '/addService',
+        Icon: AddToPhotosIcon,
+    },
+    {
+        id: 3,
+        title: 'Make Admin',
+        url: '/makeAdmin',
+        Icon: PersonAddIcon,
+    },
+    {
+        id: 4,
+        title: 'Manage Service',
+        url: '/manageServices',
+        Icon: InsertChartIcon,
+    },
+];
+
+export const userDashboard = [
+    {
+        id: 1,
+        title: 'Booking List',
+        url: '/dashboard/bookingList',
+        Icon: FormatListNumberedIcon,
+    },
+    {
+        id: 2,
+        title: 'Review',
+        url: '/dashboard/review',
+        Icon: RateReviewIcon,
     },
 ];
 
@@ -132,18 +185,10 @@ export const services = [
         title: 'Services & Repairs',
         url: '/repairs',
     },
-];
-
-export const others = [
     {
-        id: 1,
+        id: 4,
         title: 'Benefits of Cleaning',
         url: '/benefits',
-    },
-    {
-        id: 2,
-        title: 'Our Reviews',
-        url: '/reviews',
     },
 ];
 

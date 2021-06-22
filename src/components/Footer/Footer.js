@@ -1,14 +1,8 @@
+import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import { Container, Grid } from '@material-ui/core';
-import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-    information,
-    others,
-    quickLink,
-    services,
-    socialLink,
-} from '../../data/data';
+import { information, quickLink, services, socialLink } from '../../data/data';
 import FooterItem from './FooterItem';
 import SocialLink from './SocialLink';
 

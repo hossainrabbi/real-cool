@@ -12,7 +12,7 @@ import {
     Paper,
     Button,
 } from '@material-ui/core';
-import MainTitle from './MainTitle';
+import MainTitle from '../common/MainTitle';
 
 const useStyles = makeStyles((theme) => ({
     root: {

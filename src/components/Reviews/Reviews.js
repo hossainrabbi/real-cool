@@ -1,6 +1,6 @@
+import React from 'react';
 import { Container, Grid, makeStyles } from '@material-ui/core';
 import { Paper } from '@material-ui/core';
-import React from 'react';
 import { reviewsData } from '../../data/data';
 import MainTitle from '../common/MainTitle';
 import ReviewItem from './ReviewItem';

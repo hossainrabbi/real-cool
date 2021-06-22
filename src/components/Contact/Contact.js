@@ -1,3 +1,4 @@
+import React from 'react';
 import {
     List,
     ListItem,
@@ -8,7 +9,6 @@ import {
 import { Container, Grid, makeStyles } from '@material-ui/core';
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
 import MailIcon from '@material-ui/icons/Mail';
-import React from 'react';
 import MainTitle from '../common/MainTitle';
 import GoogleMap from './GoogleMap';
 
