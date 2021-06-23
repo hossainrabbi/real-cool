@@ -26,16 +26,6 @@ const useStyles = makeStyles((theme) => ({
             fontWeight: 700,
             textTransform: 'uppercase',
             marginBottom: theme.spacing(1),
-            // position: 'relative',
-            '&::before': {
-                content: 'abc',
-                // width: 100,
-                // height: 5,
-                // backgroundColor: '#fff',
-                // position: 'absolute',
-                // top: 0,
-                // left: 0,
-            },
         },
         '& .MuiButtonBase-root': {
             color: '#303030',

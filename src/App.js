@@ -3,13 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Home from './pages/Home';
-import NotFound from './components/NotFound';
-import Dashboard from './components/Dashboard/Dashboard';
-import BookingList from './components/Dashboard/BookingList/BookingList';
-import Review from './components/Dashboard/Review/Review';
-import Login from './pages/Login';
-import { AuthProvider } from './components/firebase/firebase';
-import PrivateRoute from './components/PrivateRoute';
 
 const theme = createMuiTheme({
     palette: {
@@ -38,27 +31,14 @@ const theme = createMuiTheme({
 
 const App = () => {
     return (
-        <AuthProvider>
-            <ThemeProvider theme={theme}>
-                <Router>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/login" component={Login} />
-                        <PrivateRoute exact path="/dashboard">
-                            <Dashboard />
-                        </PrivateRoute>
-                        <PrivateRoute exact path="/dashboard/bookingList">
-                            <BookingList />
-                        </PrivateRoute>
-                        <PrivateRoute exact path="/dashboard/review">
-                            <Review />
-                        </PrivateRoute>
-                        <Route path="*" component={NotFound} />
-                    </Switch>
-                    <CssBaseline />
-                </Router>
-            </ThemeProvider>
-        </AuthProvider>
+        <ThemeProvider theme={theme}>
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                </Switch>
+                <CssBaseline />
+            </Router>
+        </ThemeProvider>
     );
 };
 

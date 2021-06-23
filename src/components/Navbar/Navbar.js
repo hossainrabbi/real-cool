@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
     AppBar,
@@ -15,7 +15,6 @@ import { useTheme } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import { quickLink } from '../../data/data';
 import ResponsiveNav from './ResponsiveNav';
-import { AuthContext } from '../firebase/firebase';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -37,7 +36,6 @@ const Navbar = () => {
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.up('md'));
     const [showNav, setShowNav] = useState(false);
-    const { user, signOut } = useContext(AuthContext);
 
     return (
         <div className={classes.root}>
@@ -65,24 +63,14 @@ const Navbar = () => {
                                         {title}
                                     </Button>
                                 ))}
-                                {user.email ? (
-                                    <Button
-                                        variant="contained"
-                                        color="secondary"
-                                        onClick={signOut}
-                                    >
-                                        Logout
-                                    </Button>
-                                ) : (
-                                    <Button
-                                        variant="contained"
-                                        component={Link}
-                                        color="secondary"
-                                        to="/login"
-                                    >
-                                        Login
-                                    </Button>
-                                )}
+                                <Button
+                                    variant="contained"
+                                    component={Link}
+                                    color="secondary"
+                                    to="/login"
+                                >
+                                    Login
+                                </Button>
                             </div>
                         ) : (
                             <IconButton
