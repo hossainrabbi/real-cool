@@ -101,27 +101,27 @@ export const quickLink = [
     {
         id: 2,
         title: 'About us',
-        url: '/about',
+        url: '/',
     },
     {
         id: 3,
         title: 'Services',
-        url: '/services',
+        url: '/',
     },
     {
         id: 4,
         title: 'Blog',
-        url: '/blog',
+        url: '/',
     },
     {
         id: 5,
         title: 'Contact us',
-        url: '/contact',
+        url: '/',
     },
     {
         id: 6,
         title: 'Dashboard',
-        url: '/dashboard',
+        url: '/',
     },
 ];
 

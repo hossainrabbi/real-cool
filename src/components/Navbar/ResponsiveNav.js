@@ -33,7 +33,7 @@ const ResponsiveNav = () => {
                     variant="contained"
                     component={Link}
                     color="secondary"
-                    to="/login"
+                    to="/"
                 >
                     Login
                 </Button>
